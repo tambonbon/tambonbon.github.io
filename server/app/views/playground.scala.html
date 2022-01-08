@@ -1,0 +1,22 @@
+@import _root_.io.github.tambonbon.shared._
+
+@(customer: Customer, orders: List[Order])
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" media="screen" href="@routes.Assets.versioned(" stylesheets/main.css")">
+<link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned(" images/favicon.png")">
+
+<h1>Welcome @customer.name</h1>
+
+<ul>
+  @for(order <- orders) { <li>@order.title</li>
+    }
+</ul>
+
+@import tags._
+
+@notice("error") { color =>
+Oops, something is <span style="color:@color">wrong</span>
+}
+
+</html>

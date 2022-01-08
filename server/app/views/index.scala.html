@@ -1,9 +1,20 @@
 @(message: String)
 
-@main("Play with Scala.js") {
+@sidebar = {
+  <h1>Sidebar</h1>
+}
+@main("Play with Scala.js")(sidebar) {
 <h2>Play and Scala.js share a same message</h2>
 <ul>
   <li>Play shouts out: <em>@message</em></li>
   <li>Scala.js shouts out: <em id="scalajsShoutOut"></em></li>
 </ul>
+<section class = "item">
+  <div>
+    <h1 class="title"
+  </div>
+</section>
+<div>
+  <h1>Tammy Nguyen</h1>
+</div>
 }

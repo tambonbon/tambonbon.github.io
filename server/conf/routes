@@ -4,7 +4,8 @@
 
 # Home page
 GET        /                             io.github.tambonbon.controllers.Application.index
-
+GET        /playground01                 io.github.tambonbon.controllers.Application.playground01
+# GET        /di                           io.github.tambonbon.controllers.Application.dependencyInjection
 # Prefix must match `play.assets.urlPrefix`
 GET        /assets/*file                 controllers.Assets.at(file)
 GET        /versionedAssets/*file        controllers.Assets.versioned(path="/public", file: Asset)
